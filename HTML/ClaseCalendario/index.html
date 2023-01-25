@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+</head>
+<body>
+    <form action="">
+        <!--Añade una linea que define donde comienza y donde termina el formulario-->
+        <fieldset>
+            <label for="hora">
+                <!--Agrega un nombre arriba de los inputs que nos ayuda a entender mejor-->
+                <legend>Hora</legend>
+                <input type="time" id="hora" name="hora">
+            </label>
+            <label for="dia">
+                <legend>Día</legend>
+                <input type="date" id="dia" name="dia">
+            </label>
+            <label for="semana">
+                <legend>Semana</legend>
+                <input type="week" id="semana" name="semana">
+            </label>
+            <label for="mes">
+                <legend>Mes</legend>
+                <input type="month" id="mes" name="mes">
+            </label>
+            <input type="submit">
+        </fieldset>
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+            <label for="calendario">
+                <legend>Calendario</legend>
+                <input type="datetime-local" id="calendario" name="calendario">
+            </label>
+            <input type="submit">
+        </fieldset>
+    </form>
+    <br>
+    <main>
+        <form action="">
+            <fieldset>
+                <label for="nombre">
+                    <legend>Nombre</legend>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                </label>
+                <label for="correo">
+                    <legend>Correo</legend>
+                    <input type="email" id="correo" name="correo" autocomplete="email" required>
+                </label>
+                <label for="pais">
+                    <legend>Pais</legend>
+                    <input type="text" id="pais" name="pais" autocomplete="country" required>
+                </label>
+                <label for="cp">
+                    <legend>Código postal</legend>
+                    <input type="text" id="cp" name="cp" autocomplete="postal-code" required>
+                </label>
+                <input type="submit">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
